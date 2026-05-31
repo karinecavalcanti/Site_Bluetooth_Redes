@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bluetooth</title>
+
+    <link rel="stylesheet" href="pagina.css">
+
+</head>
+
+<body>
+
+    <section class="titulo" id="inicio">
+
+        <div class="overlay"></div>
+
+        <div class="conteudo">
+
+            <h1>Bluetooth</h1>
+
+            <h2>Trabalho Teórico - Redes de Computadores</h2>
+
+        </div>
+
+    </section>
+
+    <section class="apresenta" id=""apresenta>
+        <h1>Apresentado por</h1>
+        <p>Julia Silva da Rocha Costa</p>
+        <p>Karine Cvalcanti Donato</p>
+        <p>Oliveira de Alcântara</p>
+
+    </section>
+
+    <section class="introducao" id="introducao">
+
+        <h1>Introdução</h1>
+
+        <h2>Objetivo do trabalho</h2>
+
+        <p>
+            O presente trabalho tem como objetivo apresentar a tecnologia Bluetooth,
+            abordando seus conceitos fundamentais, funcionamento, aplicações e importância
+            no contexto das redes de comunicação sem fio.
+        </p>
+
+        <p>
+            Além disso, busca-se explicar como ocorre a transmissão de dados entre
+            dispositivos, destacando características como frequência de operação,
+            alcance e velocidade de transmissão.
+        </p>
+
+    </section>
+
+    <section class="context" id=""context>     
+
+        <h1>Contextualização do Bluetooth</h1>
+
+        <p>
+            O Bluetooth é uma tecnologia de comunicação sem fio desenvolvida para
+            permitir a troca de dados entre dispositivos eletrônicos a curtas distâncias.
+        </p>
+
+        <p>
+            Seu desenvolvimento começou na década de 1990 pela empresa sueca Ericsson,
+            com o objetivo de substituir conexões físicas feitas por cabos.
+        </p>
+
+        <p>
+            O nome “Bluetooth” foi inspirado no rei dinamarquês Harald Bluetooth,
+            conhecido por unir diferentes povos da Escandinávia.
+        </p>
+
+    </section>
+
+
+    <section class="importancia" id="importancia">
+
+        <h1>Importância da Tecnologia</h1>
+
+        <p>
+            A tecnologia Bluetooth possui grande importância devido à praticidade
+            e mobilidade que oferece aos usuários.
+        </p>
+
+        <p>
+            Com ela, é possível conectar dispositivos sem a necessidade de cabos,
+            tornando a comunicação mais simples, rápida e organizada.
+        </p>
+
+        <p>
+            O Bluetooth apresenta baixo consumo de energia,
+            especialmente em versões mais recentes como o Bluetooth Low Energy (BLE).
+        </p>
+
+        <p>
+            Dessa forma, o Bluetooth tornou-se um padrão mundial de conectividade
+            sem fio para comunicação de curta distância.
+        </p>
+
+    </section>
+
+
+    <section class="conceitos" id="conceitos">
+
+        <h1>Conceitos Básicos do Bluetooth</h1>
+
+        <h2>Definição e funcionamento</h2>
+
+        <p>
+            A comunicação Bluetooth ocorre por meio de ondas de rádio
+            que operam na faixa de frequência de 2,4 GHz.
+        </p>
+
+        <p>
+            Para que a comunicação seja estabelecida,
+            é necessário realizar o processo de pareamento.
+        </p>
+
+
+
+        <p>
+            O Bluetooth organiza os dispositivos conectados em uma estrutura de rede chamada Piconet, formada por um dispositivo mestre (master) e até sete dispositivos escravos (slaves) ativos. O dispositivo mestre é responsável por controlar a comunicação e sincronizar a troca de dados dentro da rede.
+        </p>
+
+        <p>
+            Quando múltiplas piconets se interligam,
+            forma-se uma Scatternet.
+        </p>
+
+        <p>
+            O Bluetooth utiliza a técnica FHSS (Frequency Hopping Spread Spectrum), que consiste em mudar rapidamente o canal de transmissão durante a comunicação. Em vez de permanecer em uma única frequência, o sinal “salta” entre vários canais diferentes até 1600 vezes por segundo, reduzindo interferências causadas por outros dispositivos que usam a faixa de 2,4 GHz, como redes Wi-Fi.
+        </p>
+
+    </section>
+
+
+    <section class="frequencia">
+
+        <h1>Frequência e Alcance</h1>
+
+        <p>
+            O Bluetooth opera na faixa ISM de 2,4 GHz (2,402 GHz a 2,480 GHz), dividida em múltiplos canais para evitar interferências.
+        </p>
+
+        <p>
+            Para minimizar interferências, o Bluetooth divide essa faixa em diversos canais de comunicação e utiliza o sistema de salto de frequência, alternando rapidamente entre eles durante a transmissão dos dados
+        </p>
+
+        <ul>
+
+            <li>Classe 1: até 100 metros (Uso comum: Dispositivos industriais e adaptadores de longo alcance)</li>
+            <li>Classe 2: até 10 metros (Uso comum: Smartphones, fones de ouvido e periféricos)</li>
+            <li>Classe 3: aproximadamente 1 metro (Uso comum: Aplicações de curtíssimo alcance e baixo consumo)</li>
+
+        </ul>
+
+    </section>
+
+
+    <section class="evolucao">
+
+        <h1>Evolução das Versões</h1>
+
+        <h2>Bluetooth Clássico</h2><br>
+            <li>Foco: Transmissão Contínua</li>
+            <p>Ideal para streaming de áudio de alta qualidade e transferência de arquivos grandes.</p>
+            <li>Consumo de Energia</li>
+            <p>Relativamente elevado; projetado para dispositivos recarregáveis com uso constante.</p>
+            <li>Taxa de Dados</li>
+            <p>Até 3 Mbps (EDR). Mantém a conexão ativa durante todo o tempo de uso.</p>
+        
+
+        <h2>Bluetooth Low Energy (BLE)</h2><br>
+            <li>Foco: Eficiência Energética</li>
+            <p>Desenvolvido para sensores e dispositivos IoT que enviam pequenos pacotes de dados.</p>
+            <li>Consumo de Energia</li>
+            <p>Extremamente baixo; permite anos de operação com uma única bateria de moeda.</p>
+            <li>Velocidade de Conexão</li>
+            <p>Estabelece conexões em milissegundos, permanecendo em "sleep" na maior parte do tempo.</p>
+        
+
+    </section>
+
+    <section class="evolucao2">
+        <h1>Bluetooth 5.x e Inovações Recentes</h1>
+        <br>
+
+        <h2>Foco: Eficiência Energética</h2>
+        <br>
+        <p>Nova arquitetura de áudio baseada em BLE, oferecendo alta fidelidade sonora com consumo reduzido e suporte a múltiplos fluxos.</p>
+        <br>
+
+        <h2>Localização Precisa</h2>
+        <br>
+        <p>Introdução de recursos de "Direction Finding" (AoA e AoD) para determinar a posição de dispositivos com precisão centimétrica.</p>
+        <br>
+
+        <h2>Bluetooth Mesh</h2>
+        <br>
+        <p>Permite a criação de redes em malha para automação em larga escala, onde dispositivos retransmitem mensagens entre si.</p>
+        <br>
+
+        <h2>Broadcast Audio</h2>
+        <br>
+        <p>Funcionalidade Auracast™ que permite a uma fonte de áudio transmitir para um número ilimitado de recetores próximos.</p>
+        <br>
+
+        <p>Muito mais velocidade e alcance num geral.</p>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="arquitetura">
+
+        <h1>Arquitetura e Protocolos</h1>
+
+        <p>
+            A pilha de protocolos Bluetooth é o conjunto de camadas e protocolos responsáveis pela comunicação entre dispositivos Bluetooth, desde a transmissão dos sinais de rádio até o funcionamento das aplicações. Ela garante compatibilidade entre diferentes fabricantes e padroniza a comunicação.
+        </p>
+        // add imagem ilustrativa
+
+        <ul>
+
+            <li>Camada Física: responsável pela transmissão e recepção de sinais de rádio na faixa de 2,4 GHz</li>
+            <li>Baseband: gerencia aspectos da ligação de rádio e sincronização de pacotes</li>
+            <li>L2CAP: L2CAP (Logical Link Control and Adaptation Protocol) é responsável pela segmentação e remontagem de pacotes, multiplexação e qualidade de serviço das conexões</li>
+            <li>LMP (Link Manager Protocol): cuidam das operações de gerenciamento de enlace, incluindo autenticação, configuração de conexão e controle de potência.</li>
+            <li>HCI (Host Controller Interface): interface padrão que conecta o Host e o controler, visando facilitar a comunicação entre software e hardware.</li>
+            <p>o Host contém as camadas superiores (software do sistema operacional e serviços). O Controller inclui as camadas de rádio e controle de enlace.</p>
+
+        //necessita de ajustes conceituais
+        </ul>
+
+    </section>
+
+    <section class="perfis">
+        <h1>Perfis Bluetooth</h1>
+
+        <p>
+            Os perfis são especificações que definem como dispositivos com diferentes funções interagem. Eles garantem a interoperabilidade, permitindo que aparelhos de diferentes fabricantes se comuniquem de forma padronizada.
+            Eles agem especificando serviços de aplicação, além de identificar os papéis e responsabilidades dos dispositivos na conexão e quais protocolos da pilha Bluetooth devem ser utilizados e configurados em cada aplicação.
+        </p>
+
+        <h2>Exemplos</h2>
+        <li>Headset Profile (para fones de ouvido)</li>
+        <li>Hands-Free Profile (para uso de viva-voz em carros)</li>
+        <li>Serial Port Profile (emulação de porta serial via RFCOMM)</li>
+        <li>GATT (Generic Attribute Profile): Perfis de BLE (Bluetooth Low Energy) também utilizam estruturas como esta para definir serviços e características que dispositivos podem expor e acessar.</li>
+
+    </section>
+
+
+
+    <section class="aplicacoes">
+
+        <h1>Aplicações Práticas</h1>
+
+        <ul>
+
+            <li>Internet das Coisas (IoT)</li>
+            <li>Fones de ouvido sem fio</li>
+            <li>Caixas de som Bluetooth</li>
+            <li>Smartwatches</li>
+            <li>Automação residencial</li>
+
+        </ul>
+
+    </section>
+
+    <!-- SEGURANÇA -->
+
+    <section class="seguranca">
+
+        <h1>Segurança e Limitações</h1>
+
+            <li>Pareamento e Autenticação</li>
+            <br>
+            <p>Processo inicial onde dois dispositivos trocam credenciais para estabelecer confiança. Garante que apenas dispositivos autorizados possam se comunicar.</p>
+            <br>
+            <li>Criptografia de Dados</li>
+            <br>
+            <p>Utiliza algoritmos robustos para proteger a transferência de informações, impedindo que terceiros interceptem ou leiam o conteúdo transmitido.</p>
+            <br>
+            <li>Chaves de Link</li>
+            <br>
+            <p>Chaves geradas durante o pareamento e armazenadas para manter a segurança em conexões futuras, permitindo a reconexão automática segura.</p>
+            
+            <li>Modos de Segurança</li>
+            <br>
+            <p>Diferentes níveis de proteção que podem ser adaptados conforme a sensibilidade da aplicação, desde conexões abertas até autenticação obrigatória.</p>
+
+    </section>
+
+    <section class="vulnera">
+        <h1>Vulnerabilidades e Ameaças</h1>
+        <br>
+        <li>Eavesdropping</li>
+        <p>Interceptação de comunicações em proximidade física, especialmente quando a criptografia é fraca ou inexistente.</p>
+        <br>
+
+        <li>Bluejacking</li>
+        <p>Envio de mensagens ou pacotes não solicitados para outros dispositivos sem permissão, usado para spam ou phishing.</p>
+        <br>
+
+        <li>Spoofing</li>
+        <p>Uso de identidades falsas para se passar por um dispositivo confiável e ganhar acesso a informações sensíveis.</p>
+        <br>
+
+        <li>Ataques de Força Bruta</li>
+        <p>Tentativas de adivinhar PINs de pareamento curtos ou fracos, comum em dispositivos com protocolos desatualizados.</p>
+
+
+    </section>
+
+    <section class ="protec">
+        <h1>Vulnerabilidades e Ameaças</h1>
+        <br>
+        <h2>Como se proteger</h2>
+        <br>
+        <li> Desative o Bluetooth quando não estiver em uso.</li>
+        <li> Mantenha o dispositivo em modo "não detectável".</li>
+        <li> Evite pareamentos em locais públicos desconhecidos.</li>
+        <li> Utilize PINs complexos e atualize o firmware dos dispositivos.</li>
+
+    </section>
+
+    <section class ="limit">
+        <h1>Limitações</h1>
+        <br>
+        <h2>Alcance Físico Restrito</h2>
+        <br>
+        <p>Mesmo em configurações de alta potência (Classe 1), o alcance típico é limitado a cerca de 100 metros, sendo sensível a obstáculos físicos como paredes e móveis.</p>
+        <br>
+        <h2>Taxas de Transmissão Menores</h2>
+        <br>
+        <p>Comparado ao Wi-Fi, o Bluetooth possui velocidades inferiores, tornando-o ineficiente para o envio de grandes volumes de dados.</p>
+        <br>
+        <h2>Interferência de Espectro</h2>
+        <br>
+        <p>A operação na faixa de 2,4 GHz é compartilhada com Wi-Fi, micro-ondas e outros dispositivos, podendo causar quedas de desempenho.</p>
+
+    </section>
+
+
+
+
+
+    <!-- CONCLUSÃO -->
+
+    <section class="conclusao">
+
+        <h1>Conclusão</h1>
+
+        <p>
+            O Bluetooth tornou-se uma das principais tecnologias
+            de comunicação sem fio de curta distância.
+        </p>
+
+        <p>
+            Sua evolução permitiu aplicações modernas em áudio,
+            IoT e automação.
+        </p>
+
+        <p>
+            A constante evolução da tecnologia indica
+            que ela continuará desempenhando papel fundamental
+            na conectividade digital.
+        </p>
+
+    </section>
+
+</body>
+
+</html>
