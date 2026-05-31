@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura e Protocolos - Bluetooth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+
+    <main class="container">
+        <section class="content-section">
+            <h1>Arquitetura, Protocolos e Aplicações</h1>
+            
+            <h2>Arquitetura e Protocolos</h2>
+            <p>A pilha de protocolos do Bluetooth é o conjunto de camadas e protocolos que permitem a comunicação entre dispositivos, desde a transmissão física dos sinais de rádio até a interação de aplicações. Garante interoperabilidade, compatibilidade entre fabricantes e funcionalidades padronizadas na Bluetooth Core Specification.</p>
+            
+            <div class="centralizar-conteudo">
+                <img src="pilha-protocolos.png" alt="Pilha de Protocolos Bluetooth" class="img-fluida" style="max-width: 500px;">
+                <p class="legenda">A pilha pode ser dividida no Host (camadas superiores) e Controller (camadas de rádio), conectados pela HCI.</p>
+            </div>
+
+            <h2>Camadas Principais</h2>
+            <ul>
+                <li><strong>Camada Física (PHY) / Radio:</strong> Responsável pela transmissão e recepção na faixa de 2,4 GHz.</li>
+                <li><strong>Link Layer (LL) / Baseband:</strong> Gerencia a ligação de rádio, sincronização de pacotes e manutenção da conexão.</li>
+                <li><strong>L2CAP (Logical Link Control and Adaptation Protocol):</strong> Segmentação e remontagem de pacotes, multiplexação e qualidade de serviço.</li>
+                <li><strong>LMP (Link Manager Protocol):</strong> Operações de gerenciamento de enlace (autenticação, controle de potência).</li>
+                <li><strong>Protocolos de Suporte (RFCOMM e SDP):</strong> RFCOMM fornece interface serial; SDP descobre serviços disponíveis.</li>
+                <li><strong>HCI (Host Controller Interface):</strong> Facilita a comunicação entre software (Host) e hardware (Controller).</li>
+            </ul>
+
+            <div class="centralizar-conteudo">
+                <img src="camadas-arquitetura.png" alt="Camadas da Arquitetura Bluetooth" class="img-fluida" style="max-width: 500px;">
+                <p class="legenda">Quando comparada ao modelo OSI, a pilha Bluetooth cobre aspectos das camadas física e de enlace, além de protocolos de dados e controle.</p>
+            </div>
+
+            <h2>Perfis Bluetooth</h2>
+            <p>Os perfis são especificações que definem como dispositivos com diferentes funções interagem. Eles agem especificando serviços de aplicação, além de identificar os papéis e responsabilidades dos dispositivos na conexão.</p>
+            <ul>
+                <li><strong>Headset Profile:</strong> Para fones de ouvido.</li>
+                <li><strong>Hands-Free Profile:</strong> Para uso de viva-voz em carros.</li>
+                <li><strong>Serial Port Profile:</strong> Emulação de porta serial via RFCOMM.</li>
+                <li><strong>GATT (Generic Attribute Profile):</strong> Perfis de BLE utilizam estruturas como esta para definir serviços e características que dispositivos podem expor e acessar.</li>
+            </ul>
+            <hr style="margin: 40px 0; border-color: rgba(0, 210, 255, 0.2);">
+
+            <h2>Aplicações Práticas</h2>
+
+            <h3>Internet das Coisas (IoT)</h3>
+            <p>O Bluetooth desempenha um papel fundamental na IoT por meio do BLE, permitindo comunicação eficiente entre sensores, gateways e dispositivos inteligentes com pequenas baterias. É utilizado em sensores ambientais (temperatura, umidade), rastreadores, monitoramento de saúde e dispositivos domésticos. A extensão Bluetooth Mesh permite a criação de redes em malha, essenciais em cenários complexos de automação e indústrias.</p>
+
+            <h3>Áudio e Multimídia</h3>
+            <p>Desde fones sem fio até caixas de som, transmite áudio sem cabos. Com o LE Audio (BLE), tornou-se mais estável e eficiente, permitindo transmissão para múltiplos dispositivos (Broadcast Audio). Perfis como A2DP são usados para streaming estéreo de alta qualidade, e o HFP para sistemas de viva-voz automotivos.</p>
+
+            <h3>Dispositivos Móveis</h3>
+            <p>Presente em smartphones, tablets e smartwatches. Usado para pareamento com acessórios, sincronização de dados, transferência rápida de arquivos sem cabo e conectividade automotiva. Muitos aplicativos utilizam o Bluetooth para acessar sensores externos em tempo real.</p>
+
+            <a href="index.html" class="btn-voltar">← Voltar para o Menu</a>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

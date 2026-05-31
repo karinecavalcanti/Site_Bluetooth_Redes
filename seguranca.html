@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança e Limitações - Bluetooth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+
+    <main class="container">
+        <section class="content-section">
+            <h1>Segurança, Vulnerabilidades e Conclusão</h1>
+            
+            <h2>Segurança e Autenticação</h2>
+            <ul>
+                <li><strong>Pareamento e Autenticação:</strong> Processo inicial onde dois dispositivos trocam credenciais para estabelecer confiança. Garante que apenas dispositivos autorizados possam se comunicar.</li>
+                <li><strong>Criptografia de Dados:</strong> Utiliza algoritmos robustos para proteger a transferência de informações, impedindo que terceiros interceptem ou leiam o conteúdo.</li>
+                <li><strong>Chaves de Link:</strong> Chaves geradas durante o pareamento e armazenadas para manter a segurança em conexões futuras.</li>
+                <li><strong>Modos de Segurança:</strong> Diferentes níveis de proteção adaptados à sensibilidade da aplicação, desde conexões abertas até autenticação obrigatória.</li>
+            </ul>
+
+            <h2>Vulnerabilidades e Ameaças</h2>
+            <ul>
+                <li><strong>Eavesdropping:</strong> Interceptação de comunicações em proximidade física, especialmente sem criptografia forte.</li>
+                <li><strong>Bluejacking:</strong> Envio de mensagens não solicitadas para outros dispositivos sem permissão, usado para spam.</li>
+                <li><strong>Spoofing:</strong> Uso de identidades falsas para se passar por um dispositivo confiável e ganhar acesso.</li>
+                <li><strong>Ataques de Força Bruta:</strong> Tentativas de adivinhar PINs curtos em protocolos desatualizados.</li>
+            </ul>
+
+            <h2>Como se Proteger</h2>
+            <ul>
+                <li>Desative o Bluetooth quando não estiver em uso.</li>
+                <li>Mantenha o dispositivo em modo "não detectável".</li>
+                <li>Evite pareamentos em locais públicos desconhecidos.</li>
+                <li>Utilize PINs complexos e atualize o firmware dos dispositivos.</li>
+            </ul>
+
+            <h2>Limitações da Tecnologia</h2>
+            <ul>
+                <li><strong>Alcance Físico Restrito:</strong> Muito sensível a obstáculos físicos (paredes e móveis).</li>
+                <li><strong>Taxas de Transmissão Menores:</strong> Em comparação com o Wi-Fi, tornando-o ineficiente para grandes volumes de dados de uma vez.</li>
+                <li><strong>Interferência de Espectro:</strong> Como a faixa de 2,4 GHz é muito utilizada, a saturação do ambiente pode causar atrasos.</li>
+            </ul>
+
+            <a href="index.html" class="btn-voltar">← Voltar para o Menu</a>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

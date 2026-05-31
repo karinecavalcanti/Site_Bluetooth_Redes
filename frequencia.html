@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequência, Alcance e Evolução - Bluetooth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+
+    <main class="container">
+        <section class="content-section">
+            <h1>Frequência, Alcance e Evolução</h1>
+            
+            <h2>Frequência e Alcance</h2>
+            <p>O Bluetooth opera na faixa ISM (Industrial, Scientific and Medical) de 2,4 GHz, especificamente entre 2,402 GHz e 2,480 GHz. Essa faixa é utilizada internacionalmente por diversos equipamentos eletrônicos e pode ser utilizada sem necessidade de licença em muitos países.</p>
+            <p>Para minimizar interferências, divide essa faixa em diversos canais e utiliza o sistema de salto de frequência. O alcance da tecnologia depende da potência do dispositivo e da classe utilizada:</p>
+            <ul>
+                <li><strong>Classe 1:</strong> alcance de até 100 metros;</li>
+                <li><strong>Classe 2:</strong> alcance de até 10 metros (mais comum em celulares e fones);</li>
+                <li><strong>Classe 3:</strong> alcance de aproximadamente 1 metro.</li>
+            </ul>
+            <p>Obstáculos físicos, paredes e interferências eletromagnéticas podem reduzir a distância real da conexão.</p>
+
+            <h2>Taxa de Transmissão de Dados</h2>
+            <p>As primeiras versões apresentavam velocidades mais baixas. Segundo informações da UFRJ, a especificação inicial permitia taxas de até 1 Mbps. Na prática, os valores reais variavam, podendo atingir aproximadamente 721 Kbps em transmissões half duplex e cerca de 432 Kbps em transmissões full duplex.</p>
+            <p>O Bluetooth 2.0 aumentou significativamente a taxa, alcançando valores próximos de 3 Mbps. Já versões 4.0, 5.0 e superiores passaram a oferecer maior velocidade, menor latência, maior alcance e redução no consumo. Apesar de possuir velocidades inferiores às do Wi-Fi, destaca-se pela simplicidade, baixo custo e eficiência energética.</p>
+
+            <h2>Evolução das Versões</h2>
+
+            <div class="centralizar-conteudo">
+                <img src="Evolution-of-Bluetooth.webp" alt="Evolução das Versões do Bluetooth" class="img-fluida">
+                <p class="legenda">Linha do tempo demonstrando as principais melhorias nas versões do Bluetooth.</p>
+            </div>
+            
+            <h3>Bluetooth Clássico (BR/EDR)</h3>
+            <p>As primeiras versões (1.0 e 1.2) apresentavam cerca de 1 Mbps. O Bluetooth 2.0 + EDR (Enhanced Data Rate) alcançou até 3 Mbps, ideal para transferência de arquivos e áudio (perfis A2DP, HFP e HID). A arquitetura priorizava conexões contínuas, mas o consumo de energia elevado era uma limitação para dispositivos com bateria.</p>
+
+            <h3>Bluetooth Low Energy (BLE)</h3>
+            <p>Introduzido com o Bluetooth 4.0 em 2010. Focado em dispositivos que necessitam baixo consumo energético e comunicação esporádica de pequenas quantidades de informação. Permite que sensores e smartwatches funcionem por anos com pequenas baterias. Conecta em poucos milissegundos e utiliza a estrutura GATT (Generic Attribute Profile).</p>
+
+            <h3>Bluetooth 5.x e Inovações Recentes</h3>
+            <p>O Bluetooth 5.0 (2016) trouxe velocidade até 2x maior e alcance até 4x maior em relação ao 4.2. As versões posteriores expandiram os recursos:</p>
+            <ul>
+                <li><strong>Bluetooth 5.1:</strong> Melhorias em localização e rastreamento de dispositivos.</li>
+                <li><strong>Bluetooth 5.2:</strong> Trouxe o LE Audio, baseado em BLE, com melhor qualidade sonora e menor consumo.</li>
+                <li><strong>Bluetooth Mesh:</strong> Suporte eficiente para redes em malha, utilizadas em automação residencial.</li>
+            </ul>
+
+            <a href="index.html" class="btn-voltar">← Voltar para o Menu</a>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos Básicos - Bluetooth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+
+    <main class="container">
+        <section class="content-section">
+            <h1>Conceitos Básicos do Bluetooth</h1>
+            
+            <h2>Definição e Funcionamento</h2>
+            <p>O Bluetooth é uma tecnologia de comunicação sem fio de curto alcance utilizada para conectar dispositivos eletrônicos e permitir a troca de dados sem a necessidade de cabos. Essa tecnologia é amplamente empregada em smartphones, computadores, fones de ouvido, caixas de som, teclados e diversos outros equipamentos eletrônicos.</p>
+            <p>A comunicação Bluetooth ocorre por meio de ondas de rádio que operam na faixa de frequência de 2,4 GHz. Diferentemente de redes que dependem de um equipamento central, a conexão Bluetooth acontece diretamente entre os dispositivos participantes.</p>
+            <p>Para que a comunicação seja estabelecida, é necessário realizar o processo de pareamento, no qual os aparelhos trocam informações de identificação e autenticação para criar uma conexão segura. Após esse processo, os dispositivos podem se conectar automaticamente sempre que estiverem dentro do alcance permitido.</p>
+
+            <h2>Topologia de Rede (Piconet e Scatternet)</h2>
+            <p>O Bluetooth organiza os dispositivos conectados em uma estrutura de rede chamada <strong>Piconet</strong>, formada por um dispositivo mestre (master) e até sete dispositivos escravos (slaves) ativos. O dispositivo mestre é responsável por controlar a comunicação e sincronizar a troca de dados dentro da rede.</p>
+            <p>Quando múltiplas piconets se interligam, forma-se uma <strong>Scatternet</strong>.</p>
+
+            <div class="centralizar-conteudo">
+                <img src="scatternet_piconet.png" alt="Topologia Piconet e Scatternet" class="img-fluida">
+                <p class="legenda">Ilustração da estrutura de nós formando uma Piconet e sua evolução para uma Scatternet.</p>
+            </div>
+
+            <h2>FHSS (Frequency Hopping Spread Spectrum)</h2>
+            <p>Uma das principais características do Bluetooth é a utilização da técnica chamada Frequency Hopping Spread Spectrum (FHSS), ou espalhamento espectral por salto de frequência. Nesse método, a transmissão muda constantemente de canal, reduzindo problemas de interferência causados por outros dispositivos que utilizam a mesma faixa de frequência, como redes Wi-Fi.</p>
+            <p>Segundo a especificação da tecnologia, o Bluetooth pode realizar até 1600 saltos de frequência por segundo. Além disso, também possui mecanismos de segurança, como autenticação dos dispositivos e criptografia de dados, garantindo maior proteção durante a comunicação.</p>
+
+            <a href="index.html" class="btn-voltar">← Voltar para o Menu</a>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
